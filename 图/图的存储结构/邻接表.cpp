@@ -71,13 +71,13 @@ void Print(AGraph *&g) {
 	int i; // 用来遍历元素
 	ArcNode *q;
 
-	cout << "顶点表的值为" << endl;          //printf("顶点表的值为：\n");
+	cout << "顶点表的值为" << endl;         //printf("顶点表的值为：\n");
 	// 打印顶点表
 	for (i = 0; i < g->n; i++) {
 		cout<<"v" << i<<": " << g->adjlist[i].data << endl;     //printf("v%d: %c\n", i, g->adjlist[i].data);
 	}
 
-	cout << "边表的值为" << endl;           //printf("边表的值为：\n");
+	cout << "边表的值为" << endl;          //printf("边表的值为：\n");
 	//打印边表
 	for (i = 0; i < g->n; i++) {
 		cout << "v" << i;     //printf("v%d ", i);
