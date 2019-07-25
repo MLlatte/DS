@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 #define maxSize 1000
-#define INF 9999
 
 //边结点结构体设计
 typedef struct ArcNode
