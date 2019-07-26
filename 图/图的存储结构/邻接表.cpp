@@ -24,6 +24,8 @@ typedef struct
 	int n, e;               //顶点数和边数
 }AGraph;
 AGraph *g; 
+
+//建立图的邻接表结构
 void creatAGraph(AGraph *&g)
 {
 	g= (AGraph*)malloc(sizeof(AGraph));
