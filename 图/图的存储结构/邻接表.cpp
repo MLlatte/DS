@@ -23,7 +23,6 @@ typedef struct
 	VNode adjlist[maxSize];    //图的顶点数组(邻接表)
 	int n, e;                 //顶点数和边数
 }AGraph;
-AGraph *g; 
 
 //建立图的邻接表结构
 void creatAGraph(AGraph *&g)
