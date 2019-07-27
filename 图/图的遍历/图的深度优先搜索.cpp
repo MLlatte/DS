@@ -19,8 +19,8 @@ typedef struct
 	VNode adjlist[maxSize];    //图的顶点数组(邻接表)
 	int n, e;                 //顶点数和边数
 }AGraph;
-AGraph *g;
 
+//建立图的邻接表结构
 void creatAGraph(AGraph *&g)
 {
 	g = (AGraph*)malloc(sizeof(AGraph));
@@ -68,7 +68,7 @@ void DFS(AGraph *G, int v)    //v不是顶点，v是某个顶点所在顶点数�
 {
 	ArcNode *p;         //指向ArcNode型变量的指针
 	visit[v] = 1;      //置已访问标记
-	cout << g->adjlist[v].data << endl;   //访问顶点
+	cout << G->adjlist[v].data << endl;   //访问顶点
 	p = G->adjlist[v].firstarc;          //p指向顶点v的第一条边(即通过v找到其对应的顶点，进而找到顶点所引出的第一条边)
     while (p != NULL)
     {
@@ -78,6 +78,7 @@ void DFS(AGraph *G, int v)    //v不是顶点，v是某个顶点所在顶点数�
     }
 }
 int main() {
+	AGraph *g;
 	creatAGraph(*&g);
 	DFS(*&g, 0);
 }
