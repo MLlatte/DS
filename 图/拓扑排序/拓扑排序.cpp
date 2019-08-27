@@ -105,7 +105,7 @@ void TopSort(AGraph *G)
 	{
 		i = stack[top--];                        //顶点出栈
 		++n;                                    //计数器加1，统计当前顶点
-		cout << i << "";                       //输出当前顶点
+		cout << i << " ";                       //输出当前顶点
 		p = G->adjlist[i].firstarc;
 		
 		/*遍历刚才出栈顶点的所有边，并且通过这些边找到其相邻的顶点，
